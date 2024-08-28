@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Document Metadata -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample website structure using HTML">
+    <title>Sample Webpage Structure</title>
+</head>
+
+<!-- Main Root -->
+<body>
+
+    <!-- Sectioning Root -->
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Sectioning -->
+    <main>
+        <section id="home">
+            <h2>Welcome to My Website</h2>
+            <p>This is the home section of my website where you can find a brief introduction.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our company and team in this section.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <article>
+                <h3>Service 1</h3>
+                <p>Description of service 1.</p>
+            </article>
+            <article>
+                <h3>Service 2</h3>
+                <p>Description of service 2.</p>
+            </article>
+        </section>
+
+        <!-- Text Content -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us through the following contact form.</p>
+
+            <!-- Forms -->
+            <form action="/submit" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Image and Multimedia -->
+    <figure>
+        <img src="image.jpg" alt="Sample Image">
+        <figcaption>This is a caption for the image above.</figcaption>
+    </figure>
+
+    <!-- Table Content -->
+    <section>
+        <h2>Pricing Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Service 1</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Service 2</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Content -->
+    <section>
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps" width="600" height="450"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
