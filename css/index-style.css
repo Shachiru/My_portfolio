@@ -2,35 +2,75 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: #21201e;
   color: #fea609;
-  margin: 10px 120px;
+  margin: 0;
+  cursor: default;
 }
-#top-line {
-  margin-top: 40px;
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-size: 28px;
+header {
+  height: 7vh;
+  background-color: #21201E;
+  padding: 0 120px;
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-content: center;
 }
-#top-line span {
+header p {
+  align-content: center;
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+header p > span {
   color: #fea609;
 }
-#top-line nav {
+header nav {
   font-size: 16px;
   margin-left: auto;
+  align-content: center;
 }
-#top-line nav a {
-    padding-left: 35px;
+header nav a {
+    padding: 0 20px;
     color: white;
     font-weight: normal;
     text-decoration: none;
 }
-#top-line nav a:hover {
+header nav a:hover {
   color: #fea609;
+}
+#home , #aboutme , #projects , #contact {
+  margin: 0 120px;
 }
 #home h2 {
     font-size: 90px;
     color: white;
     margin: 150px 0px 50px 0px ;
+}
+footer {
+  height: 90px;
+  width: 100%;
+  background-color: #2F2E2D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > p {
+  color: white;
+  padding-left: 120px;
+  font-weight: 500;
+}
+footer > p > span {
+  color: #fea609;
+}
+footer > nav {
+  margin-right: 120px;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+}
+footer nav a:hover {
+  color: #fea609;
 }
