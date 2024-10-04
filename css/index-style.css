@@ -1,0 +1,36 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #21201e;
+  color: #fea609;
+  margin: 10px 120px;
+}
+#top-line {
+  margin-top: 40px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 28px;
+  display: flex;
+}
+#top-line span {
+  color: #fea609;
+}
+#top-line nav {
+  font-size: 16px;
+  margin-left: auto;
+}
+#top-line nav a {
+    padding-left: 35px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+#top-line nav a:hover {
+  color: #fea609;
+}
+#home h2 {
+    font-size: 90px;
+    color: white;
+    margin: 150px 0px 50px 0px ;
+}
