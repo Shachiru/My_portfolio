@@ -36,29 +36,49 @@
     <!-- Main Root -->
     <main>
       <section id="home">
-        <h2>I'm Shachiru Rashmika.</h2>
-        <p>
-          I'm a Software engineer & Full-Stack Developer. My expertise is to
-          create and website design , java Develop and many more...
-        </p>
-        <img
-          src="/assets/images/my-photo-nobg.png"
-          alt="shachiru_photo"
-          style="float: ri"
-        />
-        <br />
-        <button>Explore My Works</button><br />
-        <a href="https://web.facebook.com/">Facebook</a>
-        <a href="https://www.youtube.com/">YouTube</a>
-        <a href="https://github.com/Shachiru">Github</a>
-        <a href="www.linkedin.com/in/shachiru-rashmika-6b5761308">LinkedIn</a>
+        <div class="container">
+          <div class="left-side">
+            <h2>I'm Shachiru Rashmika.</h2>
+            <p id="role">
+              FULL STACK DEVELOPER <span>|</span> WEB DESIGNER <span>|</span> UI
+              DESIGNER
+            </p>
+            <p id="intro">
+              I'm a Software engineer & Full-Stack Developer. My expertise is to
+              create and website design , java Develop and many more...
+            </p>
+            <div class="explore-btn">Explore My Works</div>
+            <div class="social">
+              <a href=""
+                ><img src="/assets/logos/facebook-circular-logo.png" alt="fb"
+              /></a>
+              <a href=""
+                ><img src="/assets/logos/instagram.png" alt="insta"
+              /></a>
+              <a href=""
+                ><img src="/assets/logos/linkedin.png" alt="linkedin"
+              /></a>
+              <a href=""><img src="/assets/logos/github.png" alt="github" /></a>
+              <a href=""
+                ><img src="/assets/logos/whatsapp.png" alt="whatsapp"
+              /></a>
+            </div>
+          </div>
+          <div class="right-side">
+            <img
+              src="/assets/images/my-photo-nobg.png"
+              alt="shachiru_photo"
+              style="float: ri"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Sectioning root  -->
     <section id="aboutme">
-      <h2>About Me</h2>
-      <h4>I’m Shachiru Rashmika and full stack developer.</h4>
+      <h2><span>About</span> Me</h2>
+      <h4>I’m <span>Shachiru Rashmika</span> and full stack developer.</h4>
       <p>
         Passionate software engineering student with a strong foundation in
         diverse programming languages, methodologies, and problem-solving. Excel
@@ -69,54 +89,54 @@
         skills and creativity to make a meaningful impact in software
         development.
       </p>
-      <button>Download CV</button>
-      <h3><b>Education</b></h3>
-      <ul>
-        <li>
-          2023-present <br />
-          Software Engineer Undergraduate <br />
-          IJSE - Institute of Java Software Engineering
-        </li>
-        <br />
-        <li>
-          2019-2022 <br />
-          Advanced Level - Maths <br />
-          H/Ruhunu Vijayaba College
-        </li>
-        <br />
-        <li>
-          2014-2019 <br />
-          Ordinary Level <br />
-          H/Ruhunu Vijayaba Collage
-        </li>
-      </ul>
-      <h2>Skills</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Frontend</th>
-            <th>Backend</th>
-            <th>Database</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Java</td>
-            <td>MySQL</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Python</td>
-            <td>MongoDB</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>React</td>
-            <td>Oracle Database</td>
-          </tr>
-        </tbody>
-      </table>
+      <button><img src="/assets/logos/download.png" /> Download CV</button>
+      <div class="about-hero">
+        <div class="skill-box">
+          <span>Skills</span>
+          <div class="inner-box">
+            <div class="lang-img">
+              <img src="/assets/logos/java.png" />
+              <img src="/assets/logos/css.png" />
+              <img src="/assets/logos/html-5.png" />
+              <img src="/assets/logos/java-script.png" />
+              <img src="/assets/logos/mysql.png" />
+              <img src="/assets/logos/programing.png" />
+            </div>
+          </div>
+        </div>
+        <div class="info-box">
+          <span>Info</span>
+          <div id="inner-box2">
+            <p id="first-line">
+              Name&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;Shachiru Rashmika
+            </p>
+            <p>
+              City
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;Galle
+            </p>
+            <p>
+              Age
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;21
+            </p>
+            <p>Phone &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;0779276268</p>
+            <p>
+              Email
+              &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;shachirurashmika35@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="edu-container">
+        <div class="education">
+          <p class="edu-topic">Education</p>
+          <div class="edu-box"></div>
+        </div>
+        <div class="experience">
+          <p class="edu-topic">Experience</p>
+          <div class="edu-box"></div>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
@@ -162,7 +182,6 @@
         />
         <br />
         <br />
-
         <input
           type="text"
           name="address"
@@ -189,8 +208,12 @@
       <p>&copy; 2024 All rights reserved. Designed by <span>Shachiru.</span></p>
       <nav>
         <a href="">Twitter</a>
-        <a href="">Github</a>
-        <a href="">Instagram</a>
+        <a href="https://github.com/Shachiru" target="_blank">Github</a>
+        <a
+          href="https://www.instagram.com/shachiru_r/profilecard/?igsh=MWtiNHMzaW9nZWkxNg=="
+          target="_blank"
+          >Instagram</a
+        >
       </nav>
     </footer>
   </body>

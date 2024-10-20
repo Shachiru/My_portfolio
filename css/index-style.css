@@ -7,7 +7,7 @@ body {
 }
 header {
   height: 7vh;
-  background-color: #21201E;
+  background-color: #21201e;
   padding: 0 120px;
   display: flex;
   position: sticky;
@@ -31,26 +31,227 @@ header nav {
   align-content: center;
 }
 header nav a {
-    padding: 0 20px;
-    color: white;
-    font-weight: normal;
-    text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
 }
 header nav a:hover {
   color: #fea609;
 }
-#home , #aboutme , #projects , #contact {
+#home,
+#aboutme,
+#projects,
+#contact {
   margin: 0 120px;
 }
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.left-side {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12%;
+}
+#role {
+  color: white;
+  font-size: 1.1rem;
+}
+#role span {
+  color: #fea609;
+}
+#intro {
+  color: gray;
+  font-size: 1.1rem;
+  margin-top: 71px;
+}
+.left-side p span {
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+.explore-btn {
+  width: 180px;
+  padding: 12px 8px;
+  color: white;
+  font-weight: 600;
+  background-color: #fea609;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 8px;
+}
+.social {
+  display: flex;
+  margin-top: 22%;
+}
+.social img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.explore-btn:hover {
+  color: black;
+  font-weight: bold;
+  background-color: #b07206;
+  cursor: pointer;
+}
+.right-side {
+  width: 40%;
+  padding-top: 100px;
+}
+.right-side img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin-top: 72px;
+}
 #home h2 {
-    font-size: 90px;
-    color: white;
-    margin: 150px 0px 50px 0px ;
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+}
+#aboutme {
+  padding-top: 5%;
+}
+#aboutme h2 {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+}
+#aboutme h2 span {
+  color: #fea609;
+}
+#aboutme h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+#aboutme h4 span {
+  font-weight: bold;
+}
+#aboutme p {
+  color: gray;
+  font-size: 1.1rem;
+  letter-spacing: 3%;
+  line-height: 25px;
+}
+#aboutme button {
+  background-color: #fea609;
+  border: none;
+  margin-top: 20px;
+  height: 38px;
+  width: 160px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+#aboutme button img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+}
+#aboutme button:hover {
+  background-color: #b07206;
+}
+.about-hero {
+  width: 100%;
+  display: flex;
+  margin-top: 65px;
+  flex-wrap: wrap;
+}
+.skill-box {
+  width: 45%;
+  text-align: center;
+  padding: 30px;
+}
+.skill-box span {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+.inner-box {
+  margin-top: 30px;
+  background-color: #2f2e2d;
+  width: 460px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inner-box img {
+  width: 50px;
+  height: 50px;
+  padding: 50px;
+}
+.info-box {
+  width: 45%;
+  text-align: center;
+  padding: 30px;
+  align-items: center;
+}
+.info-box span {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+#inner-box2 {
+  margin-top: 30px;
+  background-color: transparent;
+  width: 460px;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+#inner-box2 > p {
+  text-align: left;
+  margin: 30px;
+  color: white;
+}
+#inner-box2 #first-line {
+  padding-top: 30px;
+}
+hr {
+  border: 0.5px solid #b07206;
+}
+.edu-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.education, .experience{
+  width: 45%;
+  padding: 30px;
+}
+#aboutme .edu-topic {
+  text-align: center;
+  color: #fea609;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.edu-box {
+  width: 450px;
+  padding: 30px 0;
+  background-color: #2f2e2d;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
 }
 footer {
   height: 90px;
   width: 100%;
-  background-color: #2F2E2D;
+  background-color: #2f2e2d;
   display: flex;
   justify-content: space-between;
   align-items: center;
