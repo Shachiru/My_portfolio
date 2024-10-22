@@ -115,7 +115,7 @@ header nav a:hover {
   color: white;
   margin: 0;
 }
-#aboutme {
+#aboutme , #projects, #contact {
   padding-top: 5%;
 }
 #aboutme h2 {
@@ -173,7 +173,7 @@ header nav a:hover {
   padding: 30px;
 }
 .skill-box span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
 }
@@ -223,21 +223,23 @@ header nav a:hover {
   padding-top: 30px;
 }
 hr {
-  border: 0.5px solid #b07206;
+  border: 0.1px solid #b07206;
 }
 .edu-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.education, .experience{
+.education,
+.experience {
   width: 45%;
   padding: 30px;
 }
 #aboutme .edu-topic {
   text-align: center;
   color: #fea609;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .edu-box {
@@ -258,7 +260,7 @@ hr {
   color: white;
   text-transform: capitalize;
 }
-.item .institute{
+.item .institute {
   color: white;
 }
 .vertical-line {
@@ -266,6 +268,96 @@ hr {
   height: auto;
   background: #fea609;
   margin: 0 30px;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  width: 100%;
+  margin: 0 auto;
+}
+.ser-box {
+  background-color: #2f2e2d;
+  width: 75%;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+}
+.ser-box > h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.ser-box > img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  display: block;
+}
+.ser-box > p {
+  color: #9e9990;
+  line-height: 24px;
+}
+#projects > h2 {
+  font-size: 3rem;
+}
+#projects > .service-container > .ser-box {
+  padding: 0;
+}
+#projects > .service-container > .ser-box > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.pr-box {
+  display: flex;
+  justify-content: center;
+}
+.pr-box > p {
+  margin: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+.pr-box > p:hover {
+  color: #fea609;
+  text-decoration: underline;
+}
+#contact > h2 {
+  color: white;
+  font-size: 3rem;
+}
+#contact > h2 > span {
+  color: #fea609;
+}
+#contact > p {
+  color: #9e9990;
+  font-size: 1.2rem;
+}
+form > input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+textarea {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+form > button {
+  background-color: #fea609;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 2%;
+  border-radius: 8px;
+}
+#contact {
+  height: 80vh;
 }
 footer {
   height: 90px;
