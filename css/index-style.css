@@ -148,7 +148,7 @@ header {
   margin-top: 100px;
 }
 
-.social .bx {
+.social .fa {
   font-size: 1.5rem;
   padding: 12px;
   border-radius: 50%;
@@ -157,7 +157,7 @@ header {
   transition: 0.5s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.social .bx:hover {
+.social .fa:hover {
   color: #fea609;
   transition: 0.3s all linear;
   transform: scale(1.15);
@@ -173,64 +173,73 @@ header {
   width: 400px;
   margin-left: auto;
 }
+
+.heading {
+  color: #fea609;
+  font-size: 3rem;
+}
+.heading > span {
+  color: #9e9990;
+}
 #aboutme,
 #projects,
 #contact {
   padding-top: 5%;
 }
-#aboutme h2 {
-  font-size: 3rem;
-  color: white;
-  margin: 0;
-}
-#aboutme h2 span {
-  color: #fea609;
-}
-#aboutme h4 {
+
+/* About Me */
+
+.about h4 {
   color: white;
   font-size: 1.5rem;
-  font-weight: 100;
+  margin-top: 2em;
+  font-weight: 300;
 }
-#aboutme h4 span {
+
+.about h4 span {
   font-weight: bold;
 }
+
 .desc {
-  color: gray;
+  margin-top: 1em;
+  color: #9e9990;
   font-size: 1.1rem;
-  letter-spacing: 3%;
   line-height: 30px;
 }
-#aboutme button {
-  background-color: #fea609;
-  border: none;
-  margin-top: 20px;
-  height: 38px;
-  width: 160px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  border-radius: 12px;
-  display: flex;
+
+.btn {
+  font-size: 0.98rem;
+  display: inline-flex;
   align-items: center;
+  column-gap: 0.5rem;
+  padding: 12px 16px;
+  margin-top: 1rem;
+  color: #fea609;
+  background-color: #2f2e2d;
+  border-radius: 6px;
+  transition: ease 0.5s;
 }
-#aboutme button img {
-  width: 20px;
-  height: 20px;
-  margin: 0px 5px;
+
+.btn .fa {
+  font-size: 1.1rem;
 }
-#aboutme button:hover {
-  background-color: #b07206;
+
+.btn:hover {
+  transform: scale(0.9);
+  transition: ease 0.5s;
+  cursor: pointer;
+  color: #b07206;
 }
+
 .about-hero {
   width: 100%;
   display: grid;
   margin-top: 65px;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
 }
-.skill-box {
-  display: block;
-  margin: 0 auto;
-}
+
+/* Skills */
 .skill-box span {
   font-size: 2rem;
   color: white;
@@ -241,7 +250,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   height: 300px;
-  width: 460px;
+  /* width: 460px; */
   margin-top: 30px;
 }
 
@@ -252,105 +261,107 @@ header {
   margin: auto;
 }
 
-.info-box {
-  display: block;
-  margin: 0 auto;
-}
-
+/* Information */
 .info-box span {
   font-size: 2.5rem;
   color: white;
   font-weight: bold;
 }
 
-#inner-box2 {
+.inner-box {
   margin-top: 30px;
   background-color: transparent;
   border-radius: 15px;
   flex-wrap: wrap;
   display: block;
   height: 300px;
-  width: 460px;
+  /* width: 460px; */
 }
 
-#inner-box2 > p {
+.inner-box > p {
   text-align: left;
   line-height: 30px;
   color: white;
-}
-
-#inner-box2 #first-line {
-  padding-top: 30px;
+  padding-top: 1.5em;
 }
 
 hr {
   border: 0.1px solid #b07206;
 }
 
+/* Education  */
 .edu-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   margin-bottom: 50px;
 }
 
 .education,
 .experience {
-  width: 45%;
   padding: 30px;
 }
 
-#aboutme .edu-topic {
+.edu-topic {
   text-align: center;
   color: #fea609;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 2em;
 }
 
 .edu-box {
-  width: 450px;
+  display: flex;
   padding: 30px 0;
   background-color: #2f2e2d;
-  margin: 0 auto;
+  margin-top: 1.5em ;
   border-radius: 15px;
-  display: flex;
 }
 
 .item {
   padding: 12px;
+  line-height: 2em;
 }
+
 .item .year {
   color: gray;
 }
+
 .item .edu-level {
   color: white;
   text-transform: capitalize;
 }
+
 .item .institute {
   color: white;
 }
+
 .vertical-line {
   width: 2px;
   height: auto;
   background: #fea609;
   margin: 0 30px;
 }
+
+/* Services */
 .service-container {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   width: 100%;
-  margin: 0 auto;
+  margin-top: 1.5em;
+  gap: 2em;
 }
 .ser-box {
   background-color: #2f2e2d;
-  width: 75%;
   padding: 20px;
   border-radius: 15px;
-  margin: 20px auto;
+  transition: 0.5s ease-out;
 }
 .ser-box > h3 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 400;
+  color: white;
 }
 .ser-box > img {
   width: 64px;
@@ -363,11 +374,10 @@ hr {
   line-height: 24px;
 }
 .ser-box:hover {
-  box-shadow: 1px 1px 8px rgb(113, 112, 112);
+  transform: scale(1.05);
+  transition: 0.3s ease-in;
 }
-#projects > h2 {
-  font-size: 3rem;
-}
+
 #projects > .service-container > .ser-box {
   padding: 0;
 }
@@ -388,13 +398,6 @@ hr {
 .pr-box > p:hover {
   color: #fea609;
   text-decoration: underline;
-}
-#contact > h2 {
-  color: white;
-  font-size: 3rem;
-}
-#contact > h2 > span {
-  color: #fea609;
 }
 #contact > p {
   color: #9e9990;
