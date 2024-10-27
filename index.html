@@ -13,64 +13,73 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/assets/images/my-photo-modified.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>My portfolio</title>
   </head>
-  <header>
-    <p>Shachiru R<span>.</span></p>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#aboutme">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
   <body>
-    <!-- Main Root -->
+    <!-- Header -->
+  <header>
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="#" class="logo">Shachiru R<span>.</span></a>
+      <!-- navigation bar -->
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#aboutme" class="nav-link">About Me</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Burger button -->
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Home -->
     <main>
-      <section id="home">
-        <div class="container">
+      <section class="home" id="home">
+        <div class="home-content">
           <div class="left-side">
             <h2>I'm Shachiru Rashmika.</h2>
-            <p id="role">
+            <p class="role">
               FULL STACK DEVELOPER <span>|</span> WEB DESIGNER <span>|</span> UI
               DESIGNER
             </p>
-            <p id="intro">
+            <p class="intro">
               I'm a Software engineer & Full-Stack Developer. My expertise is to
               create and website design , java Develop and many more...
             </p>
             <div class="explore-btn">Explore My Works</div>
             <div class="social">
-              <a href=""
-                ><img src="/assets/logos/facebook-circular-logo.png" alt="fb"
-              /></a>
-              <a href=""
-                ><img src="/assets/logos/instagram.png" alt="insta"
-              /></a>
-              <a href=""
-                ><img src="/assets/logos/linkedin.png" alt="linkedin"
-              /></a>
-              <a href=""><img src="/assets/logos/github.png" alt="github" /></a>
-              <a href=""
-                ><img src="/assets/logos/whatsapp.png" alt="whatsapp"
-              /></a>
+              <a href="https://www.facebook.com/shachiru.kodithuwakku?mibextid=ZbWKwL" target="_blank"><i class="bx fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/shachiru_r/profilecard/?igsh=MWtiNHMzaW9nZWkxNg==" target="_blank"><i class="bx fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/shachiru-rashmika-6b5761308/" target="_blank"><i class="bx fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/Shachiru" target="_blank"><i class="bx fa-brands fa-github"></i></a>
             </div>
           </div>
+
           <div class="right-side">
-            <img
-              src="/assets/images/my-photo-nobg.png"
-              alt="shachiru_photo"
-              style="float: ri"
-            />
+            <!-- profile photo -->
+            <img src="/assets/images/my-photo-nobg.png" alt="shachiru_photo" />
           </div>
         </div>
       </section>
     </main>
 
     <!-- Sectioning root  -->
-    <section id="aboutme">
+    <section class="about container" id="aboutme">
       <h2><span>About</span> Me</h2>
       <h4>I’m <span>Shachiru Rashmika</span> and full stack developer.</h4>
+
+      <!-- description -->
       <p class="desc">
         Passionate software engineering student with a strong foundation in
         diverse programming languages, methodologies, and problem-solving. Excel
@@ -81,21 +90,24 @@
         skills and creativity to make a meaningful impact in software
         development.
       </p>
+
+      <!-- download button -->
       <button><img src="/assets/logos/download.png" /> Download CV</button>
       <div class="about-hero">
+        <!-- skills -->
         <div class="skill-box">
           <span>Skills</span>
-          <div class="inner-box">
-            <div class="lang-img">
-              <img src="/assets/logos/java.png" />
-              <img src="/assets/logos/css.png" />
-              <img src="/assets/logos/html-5.png" />
-              <img src="/assets/logos/java-script.png" />
-              <img src="/assets/logos/mysql.png" />
-              <img src="/assets/logos/programing.png" />
-            </div>
+          <div class="lang-box">
+            <img src="/assets/logos/java.png" />
+            <img src="/assets/logos/css.png" />
+            <img src="/assets/logos/html-5.png" />
+            <img src="/assets/logos/java-script.png" />
+            <img src="/assets/logos/mysql.png" />
+            <img src="/assets/logos/programing.png" />
           </div>
         </div>
+
+        <!-- information -->
         <div class="info-box">
           <span>Info</span>
           <div id="inner-box2">
@@ -197,14 +209,13 @@
           </p>
         </div>
         <div class="ser-box">
-          <h3>Figma Design</h3>
-          <img src="/assets/logos/figma.png" />
+          <h3>Web Design</h3>
+          <img src="/assets/logos/user-experience.png" />
           <p>
-            Figma is a powerful cloud-based design tool that empowers you to
-            create, prototype, and collaborate on digital projects, like
-            websites and mobile apps. It's particularly great for teamwork since
-            multiple designers can work on the same project simultaneously. Dive
-            in and let your creativity flow! Happy designing with Figma!
+            I am a passionate web designer with a keen eye for detail. I
+            specialize in creating clean, modern, and user-friendly websites.
+            Each project is a new opportunity for creativity and innovation.
+            Let's build something amazing together!
           </p>
         </div>
         <div class="ser-box">
@@ -254,7 +265,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section class="project container" id="projects">
       <h2>Projects</h2>
       <div class="project-list">
         <div class="pr-box">
@@ -291,7 +302,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="container" id="contact">
       <h2>Get in <span>touch</span></h2>
       <p>
         Interested in working together or just want to say hello? Drop me a

@@ -1,121 +1,181 @@
-body {
-  font-family: "Rubik", sans-serif;
-  background-color: #21201e;
-  color: #fea609;
-  margin: 0;
+* {
+  scroll-behavior: smooth;
   cursor: default;
-}
-header {
-  height: 7vh;
-  background-color: #21201e;
-  padding: 0 120px;
-  display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
-  align-content: center;
-}
-header p {
-  align-content: center;
   margin: 0;
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
 }
-header p > span {
-  color: #fea609;
+
+body {
+  background-color: #21201e;
 }
-header nav {
-  font-size: 16px;
-  margin-left: auto;
-  align-content: center;
+
+section {
+  padding: 3rem 0 2rem;
 }
-header nav a {
-  padding: 0 20px;
-  color: white;
-  font-weight: normal;
+
+a {
   text-decoration: none;
 }
-header nav a:hover {
-  color: #fea609;
+
+li {
+  list-style: none;
 }
-#home,
-#aboutme,
-#projects,
-#contact {
-  margin: 0 120px;
-}
+
 .container {
-  display: flex;
-  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: auto;
   width: 100%;
-  height: 100vh;
-  flex-wrap: wrap;
 }
-.left-side {
-  width: 60%;
+
+/* Header */
+
+header {
+  background-color: #2f2e2de1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav {
   display: flex;
-  flex-direction: column;
-  padding-top: 12%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
 }
-#role {
-  color: white;
-  font-size: 1.1rem;
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9e9990;
 }
-#role span {
+
+.logo > span {
   color: #fea609;
 }
-#intro {
-  color: gray;
-  font-size: 1.1rem;
-  margin-top: 71px;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
 }
-.left-side p span {
+
+.nav-link {
+  color: white;
+  padding: 4px 8px;
+}
+
+.nav-link:hover {
+  color: #fea609;
+}
+
+#burger {
+  color: white;
+  font-size: 2rem;
+  display: none;
+  justify-content: center;
+}
+
+/* Home */
+.home {
+  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  position: relative;
+  max-width: 1000px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.left-side .role {
+  color: #9e9990;
+  font-size: 0.9rem;
+}
+
+.role > span {
+  color: #fea609;
   letter-spacing: 20px;
   margin-left: 20px;
 }
-.explore-btn {
-  width: 180px;
-  padding: 12px 8px;
+
+.intro {
   color: white;
-  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+/* Explore Button  */
+.explore-btn {
+  width: 140px;
+  padding: 12px 8px;
+  margin-top: 2em;
+  color: #21201e;
+  font-weight: bold;
   background-color: #fea609;
   text-align: center;
-  letter-spacing: 2px;
   border-radius: 8px;
+  transition: 0.5s ease;
 }
-.social {
-  display: flex;
-  margin-top: 22%;
-}
-.social img {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-}
+
 .explore-btn:hover {
   color: black;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #b07206;
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s ease;
 }
+
+/* Social */
+.social {
+  display: flex;
+  align-items:center;
+  column-gap: 0.5rem;
+  margin-top: 100px;
+}
+
+.social .bx {
+  font-size: 1.5rem;
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+  background-color: #2f2e2d;
+  transition: 0.5s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.social .bx:hover {
+  color: #fea609;
+  transition: 0.3s all linear;
+  transform: scale(1.15);
+  transition: 0.5s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .right-side {
-  width: 40%;
-  padding-top: 100px;
-}
-.right-side img {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  margin-top: 72px;
+
 }
-#home h2 {
-  font-size: 5rem;
-  color: white;
-  margin: 0;
+.right-side img {
+  width: 400px;
+  margin-left: auto;
 }
-#aboutme , #projects, #contact {
+#aboutme,
+#projects,
+#contact {
   padding-top: 5%;
 }
 #aboutme h2 {
@@ -163,85 +223,89 @@ header nav a:hover {
 }
 .about-hero {
   width: 100%;
-  display: flex;
+  display: grid;
   margin-top: 65px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
 }
 .skill-box {
-  width: 45%;
-  text-align: center;
-  padding: 30px;
+  display: block;
+  margin: 0 auto;
 }
 .skill-box span {
   font-size: 2rem;
   color: white;
   font-weight: bold;
 }
-.inner-box {
-  margin-top: 30px;
-  background-color: #2f2e2d;
+
+.lang-box {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  height: 300px;
   width: 460px;
-  border-radius: 15px;
-  flex-wrap: wrap;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 30px;
 }
-.inner-box img {
+
+.lang-box img {
   width: 50px;
   height: 50px;
-  padding: 50px;
+  display: block;
+  margin: auto;
 }
+
 .info-box {
-  width: 45%;
-  text-align: center;
-  padding: 30px;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
+
 .info-box span {
   font-size: 2.5rem;
   color: white;
   font-weight: bold;
 }
+
 #inner-box2 {
   margin-top: 30px;
   background-color: transparent;
-  width: 460px;
   border-radius: 15px;
   flex-wrap: wrap;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   height: 300px;
+  width: 460px;
 }
+
 #inner-box2 > p {
   text-align: left;
-  margin: 30px;
+  line-height: 30px;
   color: white;
 }
+
 #inner-box2 #first-line {
   padding-top: 30px;
 }
+
 hr {
   border: 0.1px solid #b07206;
 }
+
 .edu-container {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
   margin-bottom: 50px;
 }
+
 .education,
 .experience {
   width: 45%;
   padding: 30px;
 }
+
 #aboutme .edu-topic {
   text-align: center;
   color: #fea609;
   font-size: 2rem;
   font-weight: bold;
 }
+
 .edu-box {
   width: 450px;
   padding: 30px 0;
@@ -250,6 +314,7 @@ hr {
   border-radius: 15px;
   display: flex;
 }
+
 .item {
   padding: 12px;
 }
@@ -297,6 +362,9 @@ hr {
   color: #9e9990;
   line-height: 24px;
 }
+.ser-box:hover {
+  box-shadow: 1px 1px 8px rgb(113, 112, 112);
+}
 #projects > h2 {
   font-size: 3rem;
 }
@@ -336,7 +404,7 @@ form > input {
   width: 100%;
   height: 40px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid gray;
   border-radius: 8px;
   color: white;
   font-size: 1rem;
@@ -347,6 +415,7 @@ textarea {
   color: white;
   font-size: 1rem;
   border-radius: 8px;
+  border: 1px solid gray;
 }
 form > button {
   background-color: #fea609;
@@ -385,4 +454,34 @@ footer nav a {
 }
 footer nav a:hover {
   color: #fea609;
+}
+@media screen and (max-width: 375px) {
+  .about-hero {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .edu-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+}
+@media screen and (min-width: 0px) and (max-width: 862px) {
+  #burger {
+    display: block;
+  }
+  header nav a {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+}
+
+@media screen and (min-width: 1440px) {
 }
