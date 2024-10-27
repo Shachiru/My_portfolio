@@ -378,10 +378,14 @@ hr {
   transition: 0.3s ease-in;
 }
 
-#projects > .service-container > .ser-box {
+/* Projects */
+.project {
+  height: 100vh;
+}
+.service-container > .ser-box {
   padding: 0;
 }
-#projects > .service-container > .ser-box > a > img {
+.service-container > .ser-box > a > img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -399,10 +403,22 @@ hr {
   color: #fea609;
   text-decoration: underline;
 }
+
+/* Contact */
+#contact {
+  height: 80vh;
+}
+
 #contact > p {
   color: #9e9990;
   font-size: 1.2rem;
+  margin-top: 2em;
 }
+
+form {
+  margin-top: 1.5em;
+}
+
 form > input {
   width: 100%;
   height: 40px;
@@ -412,6 +428,7 @@ form > input {
   color: white;
   font-size: 1rem;
 }
+
 textarea {
   width: 100%;
   background-color: transparent;
@@ -420,17 +437,21 @@ textarea {
   border-radius: 8px;
   border: 1px solid gray;
 }
+
 form > button {
   background-color: #fea609;
-  color: white;
+  color: #2f2e2d;
   border: none;
-  padding: 15px;
+  padding: 12px 15px ;
   margin-top: 2%;
   border-radius: 8px;
 }
-#contact {
-  height: 80vh;
+
+form > button:hover {
+  background-color: #b07206;
+  color: #21201e;
 }
+
 footer {
   height: 90px;
   width: 100%;
@@ -439,25 +460,31 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
 footer > p {
   color: white;
   padding-left: 120px;
   font-weight: 500;
 }
+
 footer > p > span {
   color: #fea609;
 }
+
 footer > nav {
   margin-right: 120px;
 }
+
 footer nav a {
   color: white;
   text-decoration: none;
   padding: 0 20px;
 }
+
 footer nav a:hover {
   color: #fea609;
 }
+
 @media screen and (max-width: 375px) {
   .about-hero {
     grid-template-columns: repeat(1, 1fr);
