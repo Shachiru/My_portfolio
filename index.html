@@ -43,6 +43,17 @@
       </div>
     </header>
 
+    <!-- Menu Panel -->
+    <div class="menu-panel" id="menu-panel-id">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- Home -->
     <main>
       <section class="home" id="home">
@@ -382,5 +393,19 @@
         </nav>
       </section>
     </footer>
+
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.toggle("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
   </body>
 </html>

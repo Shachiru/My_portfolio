@@ -77,6 +77,49 @@ header {
   justify-content: center;
 }
 
+/*====================== Menu Panel ======================*/
+.menu-panel {
+  background-color: #2f2e2d;
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.4s ease;
+  z-index: 200;
+}
+
+.menu-panel ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+
+.menu-panel ul li {
+  margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-panel ul li a:hover {
+  color: #fea609;
+}
+
+.close-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
 /*====================== Home ======================*/
 .home {
   padding-top: 7rem;
@@ -143,7 +186,7 @@ header {
 /*====================== Social ======================*/
 .social {
   display: flex;
-  align-items:center;
+  align-items: center;
   column-gap: 0.5rem;
   margin-top: 100px;
 }
@@ -167,7 +210,6 @@ header {
 .right-side {
   display: block;
   margin-left: auto;
-
 }
 .right-side img {
   width: 400px;
@@ -240,7 +282,7 @@ header {
   gap: 2em;
 }
 
-.skill-box > p{
+.skill-box > p {
   font-size: 2rem;
   color: white;
   font-weight: bold;
@@ -262,7 +304,7 @@ header {
 }
 
 /*====================== Information ======================*/
-.info-box > p{
+.info-box > p {
   font-size: 2.5rem;
   color: white;
   font-weight: bold;
@@ -314,7 +356,7 @@ hr {
   display: flex;
   padding: 30px 0;
   background-color: #2f2e2d;
-  margin-top: 1.5em ;
+  margin-top: 1.5em;
   border-radius: 15px;
 }
 
@@ -439,7 +481,7 @@ form > button {
   background-color: #fea609;
   color: #2f2e2d;
   border: none;
-  padding: 12px 15px ;
+  padding: 12px 15px;
   margin-top: 2%;
   border-radius: 8px;
 }
@@ -494,7 +536,7 @@ footer {
   }
 }
 
-@media screen and (max-width:875px) {
+@media screen and (max-width: 875px) {
   .lang-box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -516,13 +558,28 @@ footer {
   .service-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .menu-panel.active {
+    right: 0;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    flex-direction: column;
+    padding: 1em 0;
+  }
+
+  .footer nav {
+    margin-top: 2em;
+  }
+
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .edu-container {
     grid-template-columns: repeat(1, 2fr);
     width: 80%;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .right-side img {
@@ -530,14 +587,15 @@ footer {
   }
 }
 
-@media screen and (max-width:635px) {
+@media screen and (max-width: 635px) {
   .service-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (max-width:435px) {
-  .logo, #burger {
+@media screen and (max-width: 435px) {
+  .logo,
+  #burger {
     font-size: 1rem;
     text-align: right;
   }
@@ -550,7 +608,7 @@ footer {
     font-size: 1.6rem;
   }
 
-  .left-side .role{
+  .left-side .role {
     font-size: 0.6rem;
   }
 
@@ -569,11 +627,11 @@ footer {
     font-size: 0.7rem;
   }
 
-  .social{
+  .social {
     margin-top: 60px;
   }
 
-  .social .fa{
+  .social .fa {
     font-size: 1rem;
   }
 
@@ -583,7 +641,7 @@ footer {
     display: block;
   }
 
-  .heading{
+  .heading {
     font-size: 2.5rem;
   }
 
@@ -599,11 +657,12 @@ footer {
     margin-left: 3%;
   }
 
-  .skill-box > p , .info-box > p{
+  .skill-box > p,
+  .info-box > p {
     font-size: 1.8rem;
   }
 
-  .inner-box > p{
+  .inner-box > p {
     font-size: 0.8rem;
   }
 
@@ -624,18 +683,9 @@ footer {
     font-size: 0.95rem;
   }
 
-  .footer {
-    font-size: 0.8rem;
-    flex-direction: column;
-    padding: 1em 0;
-  }
-
-  .footer nav {
-    margin-top: 2em;
-  }
 }
 
-@media screen and (max-width:325px) {
+@media screen and (max-width: 325px) {
   .footer {
     font-size: 0.7rem;
   }
